@@ -1,0 +1,37 @@
+{
+  "name": "hkopendata-cli",
+  "version": "0.1.2",
+  "keywords": [
+    "hkopendata",
+    "opendata",
+    "open data",
+    "hong kong",
+    "hk",
+    "cli"
+  ],
+  "description": "Command line interface (CLI) for NPM package hkopendata",
+  "main": "./bin/cli.js",
+  "scripts": {
+    "release": "np --yolo",
+    "postinstall": "node postinstall.js"
+  },
+  "author": "Dem Ching",
+  "repository": "github:demching/hkopendata-cli",
+  "license": "MIT",
+  "files": [
+    "bin",
+    "path.js",
+    "postinstall.js"
+  ],
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^5.1.0",
+    "inquirer": "^7.2.0"
+  },
+  "bin": {
+    "hkopendata": "./bin/cli.js"
+  },
+  "devDependencies": {
+    "hkopendata": "^1.2.0"
+  }
+}
