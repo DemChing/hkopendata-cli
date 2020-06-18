@@ -21,7 +21,7 @@ let history = require(HISTORY_PATH),
 function checkDownloads(force) {
     let retrieve = (callback) => {
         console.log("Retrieving latest", chalk.blue("downloads.json"));
-        http.get("https://raw.githubusercontent.com/DemChing/hkopendata/master/downloads.json", (res) => {
+        http.get("https://raw.githubusercontent.com/DemChing/hkopendata/master/data/downloads.json", (res) => {
             if (res.statusCode == 200) {
                 const file = fs.createWriteStream(DOWNLOADS_PATH, "utf8");
                 res.pipe(file);
