@@ -1,6 +1,6 @@
 {
   "name": "hkopendata-cli",
-  "version": "0.1.3",
+  "version": "1.0.0",
   "keywords": [
     "hkopendata",
     "opendata",
@@ -23,7 +23,7 @@
     "path.js"
   ],
   "bin": {
-    "hkopendata": "./bin/cli.js"
+    "hkopendata": "bin/cli.js"
   },
   "devDependencies": {
     "hkopendata": "^1.2.0"
