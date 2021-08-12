@@ -47,7 +47,11 @@ Commands:
 ```
 
 #### List / Pull
+Some data may require the latest version to support or are in another format that would cause error in older version.
 
+Thus, this CLI will check if the latest version of NPM package `hkopendata` is installed locally by default.
+
+However, it may slow down or stop the process if the network is not acceptable. If you sure what you are doing, use `--skip-check` flag to bypass the checking.
 ```
 Usage: hkopendata list [options] - list downloaded files
 Usage: hkopendata pull [options] - get downloaded files from remote
