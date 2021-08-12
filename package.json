@@ -12,26 +12,26 @@
   "description": "Command line interface (CLI) for NPM package hkopendata",
   "main": "./bin/cli.js",
   "scripts": {
-    "release": "np --yolo",
-    "postinstall": "node postinstall.js"
+    "release": "np --yolo"
   },
   "author": "Dem Ching",
   "repository": "github:demching/hkopendata-cli",
   "license": "MIT",
   "files": [
     "bin",
-    "path.js",
-    "postinstall.js"
+    "lib",
+    "path.js"
   ],
-  "dependencies": {
-    "chalk": "^4.1.0",
-    "commander": "^5.1.0",
-    "inquirer": "^7.2.0"
-  },
   "bin": {
     "hkopendata": "./bin/cli.js"
   },
   "devDependencies": {
     "hkopendata": "^1.2.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cli-progress": "^3.9.0",
+    "commander": "^8.1.0",
+    "inquirer": "^8.1.2"
   }
 }

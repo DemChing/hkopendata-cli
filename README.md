@@ -31,16 +31,34 @@ npx hkopendata pull
 
 // get latest files from github (https://github.com/DemChing/hkopendata/tree/master/downloads)
 // Use space to separate multiple packages or files
-npx hkopendata pull [package|file]
+npx hkopendata pull -f file1.json file2.json -p package1 package2
 ```
 
-### Options
+### Detail Usage
+#### Base Commands
 ```
-  -V, --version            output the version number
-  -a, --all                select all files
-  -p, --package <package>  select specific package, use comma to separate multiple packages
-  -f, --file <file>        select specific file name, use comma to separate multiple files
-  -y, --yes                yes to all
-  -F, --force              force update
-  -h, --help               display help for command
+Usage: hkopendata [options] [command]
+
+Commands:
+  info                      show information of this project
+  list [options]            list downloaded files
+  pull [options]            get downloaded files from remote
+  help [options] [command]  display help for command
+```
+
+#### List / Pull
+
+```
+Usage: hkopendata list [options] - list downloaded files
+Usage: hkopendata pull [options] - get downloaded files from remote
+
+Options:
+  -a, --all                    select all files
+  -d, --detail                 show detail
+  -f, --file <files...>        select specific file(s), space separated
+  -p, --package <packages...>  select specific package(s), space separated
+  -y, --yes                    yes to all
+  -F, --force                  force checking / update
+  --skip-check                 do not check if hkopendata is installed
+  -h, --help                   display help for command
 ```
